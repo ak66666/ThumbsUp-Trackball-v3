@@ -1,0 +1,9 @@
+Manufacturer=Molex
+PartNumber=52559-1233
+PartCategory=Connector
+PackageCategory=Other
+PinCount=16
+Version=1.3
+Released=2020-01-30 16:59:27
+Downloaded=2022-10-16 01:11:21
+3D=Y

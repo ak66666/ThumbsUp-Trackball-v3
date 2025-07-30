@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '52559_1233'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Molex", "52559-1233" (!) = "", "525591233", "Other", "538-52559-1233", "https://www.mouser.co.uk/ProductDetail/Molex/52559-1233?qs=Q7nJoqLg%252BZgmtCe8OD7vZw%3D%3D", "FFC & FPC Connectors 0.5 FPC ZIF 12Ckt Sn-Ag-Bi", "", "5.55 mm"
+END_PART
+
+END.
