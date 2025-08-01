@@ -26,54 +26,6 @@ F 3 "" H 5300 2300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0101
-U 1 1 681FE87E
-P 6850 2800
-F 0 "#PWR0101" H 6850 2650 50  0001 C CNN
-F 1 "+3V3" H 6865 2973 50  0000 C CNN
-F 2 "" H 6850 2800 50  0001 C CNN
-F 3 "" H 6850 2800 50  0001 C CNN
-	1    6850 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 2800 6850 2800
-$Comp
-L power:GND #PWR0102
-U 1 1 68201B1F
-P 8300 2800
-F 0 "#PWR0102" H 8300 2550 50  0001 C CNN
-F 1 "GND" H 8305 2627 50  0000 C CNN
-F 2 "" H 8300 2800 50  0001 C CNN
-F 3 "" H 8300 2800 50  0001 C CNN
-	1    8300 2800
-	1    0    0    -1  
-$EndComp
-Text GLabel 7000 2900 0    50   Input ~ 0
-NCS
-Text GLabel 7000 3000 0    50   Input ~ 0
-MISO
-Text GLabel 7000 3100 0    50   Input ~ 0
-MOSI
-Text GLabel 7000 3200 0    50   Input ~ 0
-SCLK
-Text GLabel 7000 3300 0    50   Input ~ 0
-MOTION
-Wire Wire Line
-	8000 3400 8150 3400
-Wire Wire Line
-	8150 2700 8000 2700
-Wire Wire Line
-	8000 2700 8000 2450
-Wire Wire Line
-	8000 2450 7000 2450
-Wire Wire Line
-	7000 2450 7000 2700
-Wire Wire Line
-	7000 3750 8150 3750
-Wire Wire Line
-	8150 3750 8150 3400
-$Comp
 L MX_Alps_Hybrid:MX-NoLED MX4
 U 1 1 68205C7B
 P 1150 7150
@@ -183,16 +135,6 @@ F 3 "~" H 9200 5850 50  0001 C CNN
 	1    9200 5850
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	8000 2800 8150 2800
-Connection ~ 8150 3400
-Wire Wire Line
-	8150 2700 8150 2800
-Connection ~ 8150 2800
-Wire Wire Line
-	8150 2800 8300 2800
-Wire Wire Line
-	8150 2800 8150 3400
 Text GLabel 4500 2700 0    50   Input ~ 0
 MOTION
 $Comp
@@ -229,31 +171,6 @@ F 3 "" H 6150 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 2900 6150 2900
-Connection ~ 8000 2700
-Wire Wire Line
-	7000 3400 7000 3750
-$Comp
-L 52559-1233:52559-1233 J1
-U 1 1 681FC9A0
-P 8000 3400
-F 0 "J1" H 8500 3665 50  0000 C CNN
-F 1 "52559-1233" H 8500 3574 50  0000 C CNN
-F 2 "52559-1233:525591233" H 8850 3500 50  0001 L CNN
-F 3 "" H 8850 3400 50  0001 L CNN
-F 4 "FFC & FPC Connectors 0.5 FPC ZIF 12Ckt Sn-Ag-Bi" H 8850 3300 50  0001 L CNN "Description"
-F 5 "5.55" H 8850 3200 50  0001 L CNN "Height"
-F 6 "538-52559-1233" H 8850 3100 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Molex/52559-1233?qs=Q7nJoqLg%252BZgmtCe8OD7vZw%3D%3D" H 8850 3000 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Molex" H 8850 2900 50  0001 L CNN "Manufacturer_Name"
-F 9 "52559-1233" H 8850 2800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    8000 3400
-	-1   0    0    1   
-$EndComp
-NoConn ~ 8000 2900
-NoConn ~ 8000 3000
-NoConn ~ 8000 3100
-NoConn ~ 8000 3200
-NoConn ~ 8000 3300
 Wire Wire Line
 	4500 2900 4500 2800
 Connection ~ 4500 2800

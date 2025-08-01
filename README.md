@@ -23,3 +23,16 @@ Other pictures in Photos folder.
 # Firmware
 
 ... //TODO
+
+
+//TODO:
+- Add the sensor board (schematics are ready)
+- Expand the bottom PCB ball holes to let it poke through downwards, and may be make it off-center, only the bearing needs to be in a specific position. Otherwise the ball can hang out, as long as it does not touch the PCB or the table.
+- Extend the middle PCB ball opening - to let the bearings touch/support the ball, but leave enough of a gap for the ball otherwis..
+- Extend the top PCB ball opening to prevent the ball from falling out.
+- Add the bearing holes
+	- Add dummy resistors/shunts in the schematics for all of them
+	- Top PCB (???? May be I should leave the top board just a hair off the ball? Without a bearing it may scratch the ball though. Should I add some kind of a pad? Just to prevent the scratching. Some sticky tape?)
+	- Middle PCB
+ 	- Bottom PCB - 1 ball
+- Add a (button?) switch for the BT control - to switch to the BT layer and use the mouse buttons to switch between 3 profiles and 1 button for the current profile reset. 
