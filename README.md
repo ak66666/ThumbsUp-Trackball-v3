@@ -36,3 +36,4 @@ Other pictures in Photos folder.
 	- Middle PCB
  	- Bottom PCB - 1 ball
 - Add a (button?) switch for the BT control - to switch to the BT layer and use the mouse buttons to switch between 3 profiles and 1 button for the current profile reset. 
+- Shrink the bottom PCB to fit under 100x100mm limit - to avoid paying the "large board" fee. 
