@@ -835,6 +835,14 @@
       {
         "netclass": "Power",
         "pattern": "+3.3VA"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+1V8"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND_S"
       }
     ]
   },

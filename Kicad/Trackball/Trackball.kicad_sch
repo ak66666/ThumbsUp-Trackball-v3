@@ -3884,7 +3884,7 @@
 	)
 	(text "The middle PCB side"
 		(exclude_from_sim no)
-		(at 274.828 51.054 90)
+		(at 275.082 54.356 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3894,7 +3894,7 @@
 	)
 	(text "Sensor PCB side"
 		(exclude_from_sim no)
-		(at 239.268 52.07 90)
+		(at 234.696 57.404 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4526,7 +4526,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 58.42) (xy 251.46 58.42)
+			(xy 245.11 53.34) (xy 251.46 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4846,7 +4846,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 58.42) (xy 267.97 58.42)
+			(xy 262.89 53.34) (xy 267.97 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5730,7 +5730,7 @@
 	)
 	(global_label "SDIO_S"
 		(shape input)
-		(at 251.46 53.34 180)
+		(at 251.46 55.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5740,7 +5740,7 @@
 		)
 		(uuid "759f4841-94ee-4572-8e52-bf153870bef3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.5371 53.34 0)
+			(at 242.5371 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6000,7 +6000,7 @@
 	)
 	(global_label "SCLK"
 		(shape input)
-		(at 262.89 55.88 0)
+		(at 262.89 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6009,7 +6009,7 @@
 		)
 		(uuid "c18c4124-84fd-44ac-8fec-60e0a3aa985d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 262.89 55.88 0)
+			(at 262.89 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6040,7 +6040,7 @@
 	)
 	(global_label "SDIO"
 		(shape input)
-		(at 262.89 53.34 0)
+		(at 262.89 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6049,7 +6049,7 @@
 		)
 		(uuid "d2c8ed8d-0d0c-457f-a8d1-16851e760174")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 262.89 53.34 0)
+			(at 262.89 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6080,7 +6080,7 @@
 	)
 	(global_label "SCLK_S"
 		(shape input)
-		(at 251.46 55.88 180)
+		(at 251.46 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6090,7 +6090,7 @@
 		)
 		(uuid "d3b486b2-ffd6-4e21-badd-1c72774f54ad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.1743 55.88 0)
+			(at 242.1743 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9085,7 +9085,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3VA")
-		(at 245.11 58.42 180)
+		(at 245.11 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9093,7 +9093,7 @@
 		(dnp no)
 		(uuid "4bf4bed3-e8ef-46a7-b075-50b3ae53788d")
 		(property "Reference" "#PWR015"
-			(at 245.11 54.61 0)
+			(at 245.11 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9102,7 +9102,7 @@
 			)
 		)
 		(property "Value" "+3.3VA"
-			(at 241.554 62.738 0)
+			(at 240.792 52.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9110,7 +9110,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 58.42 0)
+			(at 245.11 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9119,7 +9119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 58.42 0)
+			(at 245.11 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9128,7 +9128,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 245.11 58.42 0)
+			(at 245.11 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10785,7 +10785,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 267.97 58.42 180)
+		(at 267.97 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10793,7 +10793,7 @@
 		(dnp no)
 		(uuid "df2ac007-ed98-4981-a774-6e1bcd6ad6c6")
 		(property "Reference" "#PWR016"
-			(at 267.97 54.61 0)
+			(at 267.97 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10802,7 +10802,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 267.589 62.8142 0)
+			(at 271.018 52.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10810,7 +10810,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 267.97 58.42 0)
+			(at 267.97 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10819,7 +10819,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 267.97 58.42 0)
+			(at 267.97 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10828,7 +10828,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 267.97 58.42 0)
+			(at 267.97 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
