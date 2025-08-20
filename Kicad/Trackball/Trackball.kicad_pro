@@ -849,7 +849,7 @@
   "pcbnew": {
     "last_paths": {
       "gencad": "",
-      "idf": "",
+      "idf": "Pictures/Trackball.emn",
       "netlist": "",
       "plot": "",
       "pos_files": "",
