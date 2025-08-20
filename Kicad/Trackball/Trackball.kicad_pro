@@ -843,6 +843,14 @@
       {
         "netclass": "Power",
         "pattern": "GND_S"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(J1-Pin_2)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(J1-Pin_1)"
       }
     ]
   },
