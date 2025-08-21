@@ -11042,7 +11042,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1m"
+		(property "Value" "1u"
 			(at 149.86 53.3462 0)
 			(effects
 				(font
