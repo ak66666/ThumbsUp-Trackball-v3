@@ -13,14 +13,14 @@ Off-the-shelf ProMicro-style MCUs are considered:
 For bearings - uxcell 2.5mm Ceramic Bearing Balls, ZrO2 Zirconium Oxide Ball, again, the same as used to improve my Elecom trackballs.
 Bearings to be implanted into PCBs, no 3D-printed ball shroud/holder.
 
-![Photos](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/01.%204%20hrs%20view.jpg)
-![Photos](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/02.%2010%20hrs%20view.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/03.%205%20hrs%20view,%20top%20PCB%20removed.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/04.%20Exploded%20view.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/05.%204%20hrs%20view%20in%20hand.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/06.%2012%20hrs%20view,%20hand%20on%20top.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/07.%20Bottom%20view%20in%20hand.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/08.%208%20hrs%20view%20in%20finger-controlled%20position.jpg)
+![Photos](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/01.%204%20hrs%20view.jpg)
+![Photos](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/02.%2010%20hrs%20view.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/03.%205%20hrs%20view,%20top%20PCB%20removed.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/04.%20Exploded%20view.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/05.%204%20hrs%20view%20in%20hand.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/06.%2012%20hrs%20view,%20hand%20on%20top.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/07.%20Bottom%20view%20in%20hand.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/08.%208%20hrs%20view%20in%20finger-controlled%20position.jpg)
 
 Other pictures in Photos folder.
 
