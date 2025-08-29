@@ -13,9 +13,8 @@ Off-the-shelf ProMicro-style MCUs are considered:
 For bearings - uxcell 2.5mm Ceramic Bearing Balls, ZrO2 Zirconium Oxide Ball, again, the same as used to improve my Elecom trackballs.
 Bearings to be implanted into PCBs, no 3D-printed ball shroud/holder.
 
-
-![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/01.%204%20hrs%20view.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/02.%2010%20hrs%20view.jpg)
+![Photos](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/01.%204%20hrs%20view.jpg)
+![Photos](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/02.%2010%20hrs%20view.jpg)
 ![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/03.%205%20hrs%20view,%20top%20PCB%20removed.jpg)
 ![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/04.%20Exploded%20view.jpg)
 ![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/05.%204%20hrs%20view%20in%20hand.jpg)
