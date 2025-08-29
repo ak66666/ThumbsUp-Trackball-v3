@@ -1,0 +1,8 @@
+file_format: "1"
+id: a_ball
+name: a_ball
+type: shield
+url: https://github.com/ak66666/ThumbsUp-Trackball
+requires: [pro_micro]
+features:
+  - pointer

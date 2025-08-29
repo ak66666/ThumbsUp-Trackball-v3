@@ -1,0 +1,14 @@
+if SHIELD_a_ball
+
+config ZMK_KEYBOARD_NAME
+    default "a_ball"
+# Other keyboard settings
+
+config ZMK_POINTING
+    default y
+
+# Assuming pointing device uses SPI
+config SPI
+    default y
+  
+endif 
