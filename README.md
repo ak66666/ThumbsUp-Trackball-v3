@@ -14,26 +14,25 @@ For bearings - uxcell 2.5mm Ceramic Bearing Balls, ZrO2 Zirconium Oxide Ball, ag
 Bearings to be implanted into PCBs, no 3D-printed ball shroud/holder.
 
 
-//TODO
-![Ball Holder Prototype (without ball)](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/Ball%20Holder%20Prototype%2C%2020250417.jpg)
-![Ball Holder Prototype (with a ball inserted)](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/Ball%20Holder%20Prototype%20(without%20ball)%2C%2020250417.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/01.%204%20hrs%20view.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/02.%2010%20hrs%20view.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/03.%205%20hrs%20view,%20top%20PCB%20removed.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/04.%20Exploded%20view.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/05.%204%20hrs%20view%20in%20hand.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/06.%2012%20hrs%20view,%20hand%20on%20top.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/07.%20Bottom%20view%20in%20hand.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball/blob/main/Photos/08.%208%20hrs%20view%20in%20finger-controlled%20position.jpg)
 
 Other pictures in Photos folder.
 
 # Firmware
 
-... //TODO
+In zmk-config-trackball folder
 
 
 //TODO:
-- Add the sensor board (schematics are ready)
-- Expand the bottom PCB ball holes to let it poke through downwards, and may be make it off-center, only the bearing needs to be in a specific position. Otherwise the ball can hang out, as long as it does not touch the PCB or the table.
-- Extend the middle PCB ball opening - to let the bearings touch/support the ball, but leave enough of a gap for the ball otherwis..
-- Extend the top PCB ball opening to prevent the ball from falling out.
-- Add the bearing holes
-	- Add dummy resistors/shunts in the schematics for all of them
-	- Top PCB (???? May be I should leave the top board just a hair off the ball? Without a bearing it may scratch the ball though. Should I add some kind of a pad? Just to prevent the scratching. Some sticky tape?)
-	- Middle PCB
- 	- Bottom PCB - 1 ball
-- Add a (button?) switch for the BT control - to switch to the BT layer and use the mouse buttons to switch between 3 profiles and 1 button for the current profile reset. 
-- Shrink the bottom PCB to fit under 100x100mm limit - to avoid paying the "large board" fee. 
+There are many deficiencies found in the first version - it works, but the ergonomics and usability may be improved.
+Luckily the sensor board, the costliest part, turned out to be good, and the rest is in the "passive" PCBs.
+They are big and look as the trackball itself, but much cheaper to update and fix.
+Changes are substantial, so I abandon this project repository as is.
+There will be a separate project/repository for the new version.
