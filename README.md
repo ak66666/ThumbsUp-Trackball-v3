@@ -1,9 +1,11 @@
-# ThumbsUp! Trackball
+# ThumbsUp! Trackball v3.
 
 A PCB-based thumb-operated trackball, inspired by Elecom EX-G left hand trackball, Ploopy Nano trackball, and my own ThumbsUp! keyboards.
 
-To be suitable for both left- and right-hand usage.
-The top two the plates can be re-attached at 180 degree and the cross-board connectors will swap left and right buttons, and the firmware will change the trackball movement direction.
+To be suitable for both left- and right-hand usage (in "portrairt" orientation), and also be finger-operated (in "landscape").
+A three-position switch/soldering pad tells the device which mode to use - that will define the rotating direction.
+
+It is a continuation of Trackball v2 - with the switches moved around, top board rotation eliminated, and some other minor changes.
  
 Off-the-shelf ProMicro-style MCUs are considered: 
 - Atmega- or RP2040-driven with QMK-based firmware - wired.
@@ -13,16 +15,16 @@ Off-the-shelf ProMicro-style MCUs are considered:
 For bearings - uxcell 2.5mm Ceramic Bearing Balls, ZrO2 Zirconium Oxide Ball, again, the same as used to improve my Elecom trackballs.
 Bearings to be implanted into PCBs, no 3D-printed ball shroud/holder.
 
-![Photos](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/01.%204%20hrs%20view.jpg)
-![Photos](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/02.%2010%20hrs%20view.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/03.%205%20hrs%20view,%20top%20PCB%20removed.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/04.%20Exploded%20view.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/05.%204%20hrs%20view%20in%20hand.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/06.%2012%20hrs%20view,%20hand%20on%20top.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/07.%20Bottom%20view%20in%20hand.jpg)
-![](https://github.com/ak66666/ThumbsUp-Trackball-v2/blob/main/Photos/08.%208%20hrs%20view%20in%20finger-controlled%20position.jpg)
+![Photos](https://github.com/ak66666/ThumbsUp-Trackball-v3/blob/main/Photos/01.%204%20hrs%20view.jpg)
+![Photos](https://github.com/ak66666/ThumbsUp-Trackball-v3/blob/main/Photos/02.%2010%20hrs%20view.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v3/blob/main/Photos/03.%205%20hrs%20view,%20top%20PCB%20removed.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v3/blob/main/Photos/04.%20Exploded%20view.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v3/blob/main/Photos/05.%204%20hrs%20view%20in%20hand.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v3/blob/main/Photos/06.%2012%20hrs%20view,%20hand%20on%20top.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v3/blob/main/Photos/07.%20Bottom%20view%20in%20hand.jpg)
+![](https://github.com/ak66666/ThumbsUp-Trackball-v3/blob/main/Photos/08.%208%20hrs%20view%20in%20finger-controlled%20position.jpg)
 
-Other pictures in Photos folder.
+//TODO: replace v2 photos with v3 if and when I get it ready.
 
 # Firmware
 
