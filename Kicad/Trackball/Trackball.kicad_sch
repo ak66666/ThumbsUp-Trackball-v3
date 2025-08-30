@@ -4262,12 +4262,6 @@
 		(uuid "786f72df-1793-4673-8887-e7b15461c2ce")
 	)
 	(junction
-		(at 93.98 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8294f1b0-f8c0-4c60-9a04-259399e4c5e5")
-	)
-	(junction
 		(at 80.01 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4418,10 +4412,6 @@
 	(no_connect
 		(at 52.07 167.64)
 		(uuid "52901247-869c-421c-99a4-3e9b0507f387")
-	)
-	(no_connect
-		(at 53.34 132.08)
-		(uuid "5b3187a8-f58b-4188-ba1d-f250f94bd4e7")
 	)
 	(no_connect
 		(at 133.35 157.48)
@@ -4619,7 +4609,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 102.87) (xy 77.47 114.3)
+			(xy 77.47 100.33) (xy 77.47 114.3)
 		)
 		(stroke
 			(width 0)
@@ -4737,16 +4727,6 @@
 		)
 		(uuid "2f35d3ca-7147-4ac0-8f13-7d1f308cccdb")
 	)
-	(wire
-		(pts
-			(xy 93.98 97.79) (xy 93.98 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "304868b3-ff8a-4514-a099-b0c7338d0069")
-	)
 	(polyline
 		(pts
 			(xy 186.055 77.47) (xy 186.055 166.37)
@@ -4829,7 +4809,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 102.87) (xy 88.9 115.57)
+			(xy 88.9 100.33) (xy 88.9 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4989,7 +4969,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 97.79) (xy 93.98 97.79)
+			(xy 82.55 97.79) (xy 101.6 97.79)
 		)
 		(stroke
 			(width 0)
@@ -5706,16 +5686,6 @@
 			(type default)
 		)
 		(uuid "fdbe68c0-7f19-4078-8795-17a5ac8231c5")
-	)
-	(wire
-		(pts
-			(xy 93.98 97.79) (xy 101.6 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe104a93-ef38-4da2-9dd1-4ffbe0e92de6")
 	)
 	(wire
 		(pts
@@ -6660,7 +6630,7 @@
 	)
 	(symbol
 		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 81.28 101.6 180)
+		(at 81.28 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6668,7 +6638,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006820547e")
 		(property "Reference" "MX2"
-			(at 80.4418 107.2642 0)
+			(at 86.9442 102.4382 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6676,7 +6646,7 @@
 			)
 		)
 		(property "Value" "MX-NoLED"
-			(at 80.4418 105.3846 0)
+			(at 85.0646 102.4382 0)
 			(effects
 				(font
 					(size 0.508 0.508)
@@ -6684,7 +6654,7 @@
 			)
 		)
 		(property "Footprint" "keyswitches.pretty-master:Kailh_socket_PG1350"
-			(at 97.155 100.965 0)
+			(at 80.645 85.725 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6693,7 +6663,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.155 100.965 0)
+			(at 80.645 85.725 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6726,7 +6696,7 @@
 	)
 	(symbol
 		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 92.71 101.6 180)
+		(at 92.71 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6734,7 +6704,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000068205860")
 		(property "Reference" "MX3"
-			(at 91.8718 107.2642 0)
+			(at 98.3742 102.4382 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6742,7 +6712,7 @@
 			)
 		)
 		(property "Value" "MX-NoLED"
-			(at 91.8718 105.3846 0)
+			(at 96.4946 102.4382 0)
 			(effects
 				(font
 					(size 0.508 0.508)
@@ -6750,7 +6720,7 @@
 			)
 		)
 		(property "Footprint" "keyswitches.pretty-master:Kailh_socket_PG1350"
-			(at 108.585 100.965 0)
+			(at 92.075 85.725 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6759,7 +6729,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 108.585 100.965 0)
+			(at 92.075 85.725 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6924,7 +6894,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Male")
-		(at 54.61 162.56 90)
+		(at 57.15 162.56 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6932,7 +6903,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000068208582")
 		(property "Reference" "J3"
-			(at 50.9524 160.9852 90)
+			(at 46.228 161.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6941,7 +6912,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Male"
-			(at 50.9524 158.6738 90)
+			(at 32.258 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6950,7 +6921,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 54.61 162.56 0)
+			(at 57.15 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6959,7 +6930,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 162.56 0)
+			(at 57.15 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6968,7 +6939,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 162.56 0)
+			(at 57.15 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7637,7 +7608,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Female")
-		(at 54.61 162.56 90)
+		(at 57.15 162.56 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7645,7 +7617,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006823baf2")
 		(property "Reference" "J13"
-			(at 46.736 163.83 90)
+			(at 48.006 164.338 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7654,7 +7626,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Female"
-			(at 30.48 165.862 90)
+			(at 47.244 167.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7663,7 +7635,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 54.61 162.56 0)
+			(at 57.15 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7672,7 +7644,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 162.56 0)
+			(at 57.15 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7681,7 +7653,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 162.56 0)
+			(at 57.15 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
