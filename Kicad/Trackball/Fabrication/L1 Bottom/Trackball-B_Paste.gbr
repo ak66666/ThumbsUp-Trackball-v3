@@ -1,33 +1,17 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,9.0.2*
-G04 #@! TF.CreationDate,2025-08-20T20:14:58-04:00*
+G04 #@! TF.CreationDate,2025-09-01T17:34:04-04:00*
 G04 #@! TF.ProjectId,Trackball,54726163-6b62-4616-9c6c-2e6b69636164,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Paste,Bot*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 9.0.2) date 2025-08-20 20:14:58*
+G04 Created by KiCad (PCBNEW 9.0.2) date 2025-09-01 17:34:04*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
 G04 Aperture macros list*
-%AMRoundRect*
-0 Rectangle with rounded corners*
-0 $1 Rounding radius*
-0 $2 $3 $4 $5 $6 $7 $8 $9 X,Y pos of 4 corners*
-0 Add a 4 corners polygon primitive as box body*
-4,1,4,$2,$3,$4,$5,$6,$7,$8,$9,$2,$3,0*
-0 Add four circle primitives for the rounded corners*
-1,1,$1+$1,$2,$3*
-1,1,$1+$1,$4,$5*
-1,1,$1+$1,$6,$7*
-1,1,$1+$1,$8,$9*
-0 Add four rect primitives between the rounded corners*
-20,1,$1+$1,$2,$3,$4,$5,0*
-20,1,$1+$1,$4,$5,$6,$7,0*
-20,1,$1+$1,$6,$7,$8,$9,0*
-20,1,$1+$1,$8,$9,$2,$3,0*%
 %AMRotRect*
 0 Rectangle, with rotation*
 0 The origin of the aperture is its center*
@@ -39,25 +23,15 @@ G04 Aperture macros list*
 G04 Aperture macros list end*
 %ADD10RotRect,2.600000X2.600000X45.000000*%
 %ADD11RotRect,2.600000X2.600000X225.000000*%
-%ADD12RoundRect,0.250000X-0.689429X-0.229810X-0.229810X-0.689429X0.689429X0.229810X0.229810X0.689429X0*%
-%ADD13RoundRect,0.250000X0.689429X0.229810X0.229810X0.689429X-0.689429X-0.229810X-0.229810X-0.689429X0*%
 G04 APERTURE END LIST*
 D10*
-X204370850Y-95877267D03*
-X194648132Y-102488715D03*
-X211836483Y-77013072D03*
-X202113765Y-83624520D03*
-X230700678Y-69547439D03*
-X220977960Y-76158887D03*
+X186686452Y-52651747D03*
+X176963734Y-59263195D03*
+X206909706Y-46570629D03*
+X197186988Y-53182077D03*
 D11*
-X240668762Y-74414454D03*
-X250391480Y-67803006D03*
-X199974767Y-115108449D03*
-X209697485Y-108497001D03*
-D12*
-X259955099Y-79205102D03*
-X262041065Y-81291068D03*
-D13*
-X211482930Y-131849203D03*
-X209396964Y-129763237D03*
+X238694156Y-113922549D03*
+X248416874Y-107311101D03*
+X244775274Y-93699295D03*
+X254497992Y-87087847D03*
 M02*

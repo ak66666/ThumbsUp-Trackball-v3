@@ -1,2 +1,0 @@
-config SHIELD_a_ball
-    def_bool $(shields_list_contains,a_ball)
