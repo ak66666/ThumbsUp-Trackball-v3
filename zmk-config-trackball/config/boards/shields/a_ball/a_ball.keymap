@@ -10,9 +10,11 @@
 //#include <input/processors.dtsi>
 
 
-#define RIGHT_HAND 0
-#define LEFT_HAND 1
-#define EITHER_HAND_SCROLL 2
+#define THUMB_LEFT  0
+#define THUMB_RIGHT 1
+#define FINGER_LEFT 2
+#define FINGER_RIGHT 3 
+#define EITHER_HAND_SCROLL 4
 
 // Mouse speed increased
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
@@ -26,49 +28,80 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-// Map is not exactly a 3x3 matrix, close enough to treat it like that:
-//         map = <
-// Row 0:
-//	               RC(0,0) RC(0,1) RC(0,2) 
-// Row 1:
-//                   RC(0,6)                 RC(0,5) 
-//
-//                                             RC(0,3) 
-//
-// Row 2:
-//                              RC(0,7) RC(0,8)   
-//
-//					       RC(0,4)       
+
+//        map = <
+//		                 /* Ball */
+//	         	RC(0,3)              RC(0,0) 
+//		 RC(0,4)                            RC(0,1)
+//   		 RC(0,5) 	                    RC(0,2) 
+//                  /* Buttons on top of the middle deck */
+//  		       /* Unlock  BTSelect BTReset */ 
+//                          RC(0,6) RC(0,7)  RC(0,8)        
+//               /* Slider switches on the bottom of the middle deck */
+//		/* Handiness L/R   Orientation Thumb/Fingers  */
+//                      RC(0,10)               RC(0,9)      
 //        >;
+
 // &mkp LCLK &mkp MCLK &mkp RCLK  &none
-        RIGHT_HAND {
+
+	// Layer 0
+        THUMB_LEFT {
             bindings = <
-                       &none &mo EITHER_HAND_SCROLL &mkp RCLK
-                  &none                          &none
-                                                    &mo 2
-                		&mo 1 &bt BT_CLR
-						    &mkp LCLK 
+			&mkp LCLK             	&none
+		&mo EITHER_HAND_SCROLL               &none
+		&mkp RCLK                            &none
+	                       /* Buttons  */
+		&studio_unlock  &bt BT_NXT   &bt BT_CLR
+			&mo 1                 &mo 2
             >;
         };
 
-	// Left hand layer swaps the left and right buttons, and indicates to trakball_listener that it should swap X and Y axis (from those set by default.)
-        LEFT_HAND {
+
+	// Layer 1
+        THUMB_RIGHT {
             bindings = <
-                       &mkp RCLK &mo EITHER_HAND_SCROLL &none
-                  &none                          &none
-                                                    &mkp LCLK
-                		&trans &bt BT_CLR
-						    &mo 2 
+     			&none         		&mkp LCLK             
+	       &none  				     &mo EITHER_HAND_SCROLL        
+	       &none  	 			     &mkp RCLK                     
+	                       /* Buttons  */
+		&studio_unlock  &bt BT_NXT   &bt BT_C LR
+			&trans                  &mo 2
             >;
         };
 
-	// Scroll layers do nothing by themselves, but indicate to trackball_listener that it should apply the appropriate transformation, i.e. switch to scrolling instead of pointing.
-	// For that reason it is completely transparent.
+	// Layer 2
+        FINGER_LEFT {
+            bindings = <
+			&mo EITHER_HAND_SCROLL	&mkp LCLK             
+		&none					&mkp RCLK
+		&none					&mkp MCLK
+	                       /* Buttons  */
+		&studio_unlock  &bt BT_NXT   &bt BT_CLR
+			&mo 3                 &trans
+            >;
+        };
+
+	// Layer 3
+        FINGER_RIGHT {
+            bindings = <
+			&mkp LCLK             &mo EITHER_HAND_SCROLL
+		&mkp RCLK				&none	
+		&mkp MCLK                               &none	
+	                       /* Buttons  */
+		&studio_unlock  &bt BT_NXT   &bt BT_CLR
+			&trans                 &trans
+            >;
+        };
+
+
+	// Scroll layers do nothing by themselves, it is completely transparent.
+	// It is detected in trackball_listener telling to switch from the pointing movement to scrolling.
         EITHER_HAND_SCROLL {
             bindings = <
 		&trans	&trans	&trans
 		&trans	&trans	&trans
 		&trans	&trans	&trans
+	     	&trans	&trans	
             >;
         };
 

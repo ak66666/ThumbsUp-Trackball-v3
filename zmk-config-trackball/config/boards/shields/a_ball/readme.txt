@@ -40,3 +40,9 @@ There were two obstacles:
 - the 3610 not starting up in time, had to increase the delay from 1s to 2s.
 - the sensor lens was too close to the ball, adjusted its location.
 The rest of the code was the same as in the mock-up.
+
+
+20250910 1757
+
+Adapting the firmware for v3.
+The sensor, button wiring has been changed a lot.

@@ -12,17 +12,20 @@
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
-        columns = <3>;
-        rows = <3>;
+        columns = <1>;
+        rows = <11>;
+	/* Map represents trackball in "Landscape" orientation, aka Finger-controlled. */
         map = <
-	               RC(0,0) RC(0,1) RC(0,2) 
-                   RC(0,6)                 RC(0,5) 
-
-                                               RC(0,3) 
-
-                              RC(0,7)RC(0,8)   
-
-					       RC(0,4)       
+		                 /* Ball */
+	         	RC(0,3)              RC(0,0) 
+		 RC(0,4)                            RC(0,1)
+   		 RC(0,5) 	                    RC(0,2) 
+                  /* Buttons on top of the middle deck */
+  		       /* Unlock  BTSelect BTReset */ 
+                          RC(0,6) RC(0,7)  RC(0,8)        
+               /* Slider switches on the bottom of the middle deck */
+		/* Handiness L/R   Orientation Thumb/Fingers  */
+                      RC(0,10)               RC(0,9)      
         >;
     };
 
@@ -30,34 +33,37 @@
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
         input-gpios
-            = <&pro_micro 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            = <&pro_micro 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  /* Button 1 */
+            , <&pro_micro 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  /* Button 2 */
+            , <&pro_micro 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  /* Button 3 */
+            , <&pro_micro 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  /* Button 4 */
+            , <&pro_micro 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  /* Button 5 */
+            , <&pro_micro 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  /* Button 6 */
+
+            , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> /* Studio Unlock */
+            , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> /* BT Select */
+            , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> /* BT Reset  */
+            , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> /* Handness: Pressed - Right, Released - Left */
+ 	    , <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> /* Orientation: Pressed - Fingers, Released - Thumbs */
             ;
     };
 
 };
-                              
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 10)>,
-                <NRF_PSEL(SPIM_MISO, 0, 10)>;
+            psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                <NRF_PSEL(SPIM_MISO, 0, 17)>;
         };
     };
 
     spi0_sleep: spi0_sleep {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 10)>,
-                <NRF_PSEL(SPIM_MISO, 0, 10)>;
+            psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                <NRF_PSEL(SPIM_MISO, 0, 17)>;
             low-power-enable;
         };
     };
@@ -71,14 +77,14 @@
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio1 15 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
         status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <600>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
@@ -90,7 +96,7 @@
            thus, the sensor would be a `wakeup-source` */
     };
 };
-
+                              
 / {
   trackball_listener {
     compatible = "zmk,input-listener";
@@ -109,7 +115,8 @@
         layers           = <1>;
         input-processors = <
             &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT) // Inverts the pointer direction
-            &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT) // Inverts the pointer direction
+	   // The regular scrolling assumes the scroling wheel, which is not used here, so &zip_scroll_transform is not applicable and does not work.
+	   // &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT) // Inverts the pointer direction, from the default inversion..
         >;
 	process-next; // To process the scroller layer, if/when it is activated. Without this command the processing would stop here.
     };
@@ -118,6 +125,7 @@
     either_hand_scroller: either_hand_scroller {
         layers           = <2>;
         input-processors = <
+            &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT) // Inverts the pointer direction.
             &zip_xy_scaler 1 15                              // Scales the scroll speed
             &zip_xy_to_scroll_mapper                         // Converts XY movement to scroll events
         >;

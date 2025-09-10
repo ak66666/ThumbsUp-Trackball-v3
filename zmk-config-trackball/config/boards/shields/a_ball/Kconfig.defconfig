@@ -1,4 +1,4 @@
-if SHIELD_a_ball
+if SHIELD_A_BALL
 
 config ZMK_KEYBOARD_NAME
     default "a_ball"
