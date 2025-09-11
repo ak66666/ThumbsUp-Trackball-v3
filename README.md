@@ -24,3 +24,6 @@ Other pictures in Photos folder.
 
 https://github.com/ak66666/zmk-config-trackball.v3
 
+# For sale on Etsy
+ 
+https://www.etsy.com/ca/listing/4367668734
