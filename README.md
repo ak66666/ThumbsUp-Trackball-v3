@@ -1,4 +1,4 @@
-# ThumbsUp! Trackball v3.
+# ThumbsUp! Trackball v3
 
 A PCB-based thumb-operated trackball, inspired by Elecom EX-G left hand trackball, Ploopy Nano trackball, and my own ThumbsUp! keyboards.
 
@@ -27,3 +27,7 @@ https://github.com/ak66666/zmk-config-trackball.v3
 # For sale on Etsy
  
 https://www.etsy.com/ca/listing/4367668734
+
+# Assembly Instructions
+
+https://thumbsupkeyboards.blogspot.com/2025/09/thumbsup-trackball-v3-assembly-steps.html
