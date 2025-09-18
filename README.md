@@ -22,7 +22,15 @@ Other pictures in Photos folder.
 
 # Firmware
 
-https://github.com/ak66666/zmk-config-trackball.v3
+Original version with BT and wired connection:
+https://github.com/ak66666/zmk-config-trackball.v3        
+
+Dongle version:
+https://github.com/ak66666/zmk-config-trackball.v3.dongle
+
+Dongle version for a combo with ThumbsUp! v9 keyboard:
+https://github.com/ak66666/zmk-config-trackball-v3-and-keyboard-v9.dongle
+
 
 # For sale on Etsy
  
