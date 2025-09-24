@@ -39,3 +39,34 @@ https://www.etsy.com/ca/listing/4367668734
 # Assembly Instructions
 
 https://thumbsupkeyboards.blogspot.com/2025/09/thumbsup-trackball-v3-assembly-steps.html
+
+
+
+# Gerber Generation
+
+There is a little trick that needs to be applied to produce silkscreens with overlapping labels.
+Normally all the elements on the silkscreen are added up, so the text would be interrupted/covered by the drawing elements.
+
+To work around that limitation - use the generation option "Subtract Soldermask from Silkscreen".
+IMPORTANT: Save and preserve the project files, you will be temporarily removing parts of the board design.
+
+Labels which are covered by the silkscreen pattern, they should be moved to the front/back soldering mask layer.
+Text needs to be inverted - check "Knockout" box in the label properties.
+On the matching front/back silkscreen layer add a rectangle around the label. 
+For the design time leave it unfilled - will fill it during Gerber file generation as described below.
+
+![Photos](https://github.com/ak66666/ThumbsUp-Trackball-v3/blob/main/Photos/Silkscreen_Pattern_and_Label_Combination.png)
+
+
+To generate fabrication files:
+- In PCB Editor, for each of the PCB do the following (_do not_ save the file while doing that):
+	- Select and delete all other PCBs, leave only one to be generated.
+	- For each label on the solder mask layer - locate silkscreen rectangles around that label, modify its property - check "Filled Shape" box.
+	  (Those boxes are not filled while designing the board, otherwise they cover all other elements.)
+	- Generate the Gerbers (plotting, drilling files) with this:
+		- Uncheck  "Subtract Soldermask from Silkscreen" option.
+		- Exlude the silkscreens at this point.
+	- Generate silkscreen layers with  "Subtract Soldermask from Silkscreen" option checked.
+	- Close PCB Editor without saving the file.
+	- Re-open PCB Editor and repeat these steps for other boards.
+- Verify the genearted files.

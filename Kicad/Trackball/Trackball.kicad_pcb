@@ -16429,6 +16429,28 @@
 			)
 		)
 	)
+	(gr_rect
+		(start 164.775 96.35)
+		(end 170.025 106.85)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b887a146-9b10-492d-acbb-859344381149")
+	)
+	(gr_rect
+		(start 215.15 89.6)
+		(end 225.4 113.85)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "59fc9366-c663-4541-a1c5-37f7157480a9")
+	)
 	(gr_line
 		(start 220.4 35.6)
 		(end 220.4 165.6)
@@ -17803,6 +17825,19 @@
 		(layer "Edge.Cuts")
 		(uuid "fe9a3a80-bd4b-4cc4-98f7-f3170d859088")
 	)
+	(gr_text "u/ak66666\nThumbsUp! Trackball \nv3 rev.2\n2025-09-24"
+		(at 224.9 102.35 90)
+		(layer "B.Mask" knockout)
+		(uuid "0332dc5d-e856-498e-87f7-be08e64d8ee4")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify bottom mirror)
+		)
+	)
 	(gr_text "SDIO"
 		(at 97.4 164.35 45)
 		(layer "F.SilkS")
@@ -18192,6 +18227,19 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "BATTERY \nON-OFF"
+		(at 169.525 101.35 90)
+		(layer "Dwgs.User" knockout)
+		(uuid "2d387253-ee4a-4910-a5a3-0f8e9b1faebb")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
 	(via
 		(at 142.4 126.6)
 		(size 0.8)
@@ -18418,7 +18466,7 @@
 		(uuid "8867d16a-5aa5-4d34-a7d4-ba7c1c71e37c")
 	)
 	(via
-		(at 167.4 111.6)
+		(at 169.824666 111.6)
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
