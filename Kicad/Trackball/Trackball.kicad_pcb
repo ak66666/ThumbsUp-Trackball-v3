@@ -17803,19 +17803,6 @@
 		(layer "Edge.Cuts")
 		(uuid "fe9a3a80-bd4b-4cc4-98f7-f3170d859088")
 	)
-	(gr_text "BATTERY \nOFF-ON"
-		(at 171.4 100.6 90)
-		(layer "F.SilkS" knockout)
-		(uuid "27b16c1e-a8d6-4c7f-b3a7-6567128a556e")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify bottom)
-		)
-	)
 	(gr_text "SDIO"
 		(at 97.4 164.35 45)
 		(layer "F.SilkS")
@@ -17876,19 +17863,6 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "HAND\nLEFT-RIGHT"
-		(at 169.4 86.85 90)
-		(layer "F.SilkS" knockout)
-		(uuid "aeb26caa-ef53-4687-8744-3410e660b07c")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify bottom)
-		)
-	)
 	(gr_text "1"
 		(at 109.15 167.85 0)
 		(layer "F.SilkS")
@@ -17926,14 +17900,15 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "LEFT-RIGHT\nHAND"
+	(gr_text "HAND\nLEFT-RIGHT"
 		(at 169.3 87.1 90)
 		(layer "B.SilkS")
 		(uuid "0ee96c52-a909-4d70-8701-606887a5d0ec")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
 			)
 			(justify bottom mirror)
 		)
@@ -17975,14 +17950,15 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "THUMB-FINGER\nCONTROL"
-		(at 169.3 115.85 90)
+	(gr_text "CONTROL\nTHUMB-FINGER\n"
+		(at 169.3 115.35 90)
 		(layer "B.SilkS")
 		(uuid "2a152f9a-5631-41ab-879d-59e86010a0d0")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
 			)
 			(justify bottom mirror)
 		)
@@ -18051,8 +18027,8 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "u/ak66666\n2025-09-19"
-		(at 157.65 119.1 0)
+	(gr_text "u/ak66666\n2025-09-23"
+		(at 158.9 119.1 0)
 		(layer "B.SilkS")
 		(uuid "80b3d3b2-2b73-4ff6-9bb9-473d44b16b5a")
 		(effects
@@ -18091,7 +18067,7 @@
 	)
 	(gr_text "BATTERY \nOFF-ON"
 		(at 95.957143 101.861 90)
-		(layer "B.SilkS")
+		(layer "B.SilkS" knockout)
 		(uuid "96a5b36e-c4d9-40d3-b301-8e59b9f9c2e0")
 		(effects
 			(font
@@ -18152,7 +18128,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "BT\nRESET"
+	(gr_text "BT\nCLEAR"
 		(at 141.4 75.829 180)
 		(layer "B.SilkS")
 		(uuid "bbdd7463-5538-43b4-8c91-1794e102ff28")
@@ -18166,13 +18142,14 @@
 		)
 	)
 	(gr_text "BATTERY \nOFF - ON"
-		(at 170.65 101.85 90)
-		(layer "B.SilkS")
+		(at 171.9 100.85 90)
+		(layer "B.SilkS" knockout)
 		(uuid "cba1ab6c-6072-4e59-b321-64af2b212517")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
 			)
 			(justify bottom mirror)
 		)
@@ -18202,7 +18179,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "ThumbsUp! \nTrackball v3\nrev.1"
+	(gr_text "ThumbsUp! \nTrackball v3\nrev.2"
 		(at 144.65 81.6 180)
 		(layer "B.SilkS")
 		(uuid "f9343e87-5466-458a-96f3-1a3f6c041da4")
@@ -18213,19 +18190,6 @@
 				(bold yes)
 			)
 			(justify left bottom mirror)
-		)
-	)
-	(gr_text "CONTROL\nTHUMB-FINGER"
-		(at 169.4 117.1 90)
-		(layer "Dwgs.User" knockout)
-		(uuid "435f9143-8082-4154-af54-a8c5031a45e6")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify bottom)
 		)
 	)
 	(via
