@@ -17825,6 +17825,19 @@
 		(layer "Edge.Cuts")
 		(uuid "fe9a3a80-bd4b-4cc4-98f7-f3170d859088")
 	)
+	(gr_text "BATTERY \nON-OFF"
+		(at 169.525 101.35 90)
+		(layer "F.Mask" knockout)
+		(uuid "2d387253-ee4a-4910-a5a3-0f8e9b1faebb")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
 	(gr_text "u/ak66666\nThumbsUp! Trackball \nv3 rev.2\n2025-09-24"
 		(at 224.9 102.35 90)
 		(layer "B.Mask" knockout)
@@ -18062,7 +18075,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "u/ak66666\n2025-09-23"
+	(gr_text "u/ak66666\n2025-10-01"
 		(at 158.9 119.1 0)
 		(layer "B.SilkS")
 		(uuid "80b3d3b2-2b73-4ff6-9bb9-473d44b16b5a")
@@ -18214,7 +18227,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "ThumbsUp! \nTrackball v3\nrev.2"
+	(gr_text "ThumbsUp! \nTrackball v3\nrev.3"
 		(at 144.65 81.6 180)
 		(layer "B.SilkS")
 		(uuid "f9343e87-5466-458a-96f3-1a3f6c041da4")
@@ -18225,19 +18238,6 @@
 				(bold yes)
 			)
 			(justify left bottom mirror)
-		)
-	)
-	(gr_text "BATTERY \nON-OFF"
-		(at 169.525 101.35 90)
-		(layer "Dwgs.User" knockout)
-		(uuid "2d387253-ee4a-4910-a5a3-0f8e9b1faebb")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify bottom)
 		)
 	)
 	(via
@@ -19498,36 +19498,36 @@
 		(uuid "f4b90828-8ebb-4264-941a-5f435bbcc0d0")
 	)
 	(segment
-		(start 131.65 125.35)
+		(start 122.65 131.35)
+		(end 125.65 128.35)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "35e1e2dc-3466-4257-9ca4-d721aacbdbf1")
+	)
+	(segment
+		(start 129.4 128.35)
+		(end 132.4 125.35)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "689c68ce-e021-4713-9741-69e363c13c49")
+	)
+	(segment
+		(start 132.4 125.35)
 		(end 145.9 125.35)
 		(width 0.25)
 		(layer "F.Cu")
 		(net 10)
-		(uuid "09b1b35c-d68c-48e8-a33c-90aa0b232824")
+		(uuid "91bd6c94-9bed-49ac-94be-6a94d75048ca")
 	)
 	(segment
-		(start 129.15 127.85)
-		(end 131.65 125.35)
+		(start 125.65 128.35)
+		(end 129.4 128.35)
 		(width 0.25)
 		(layer "F.Cu")
 		(net 10)
-		(uuid "8794c484-abb0-44c4-8ba0-40269e0ca7c5")
-	)
-	(segment
-		(start 126.15 127.85)
-		(end 129.15 127.85)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 10)
-		(uuid "bd521d0e-7c92-45d3-a683-e828d40b59ff")
-	)
-	(segment
-		(start 122.65 131.35)
-		(end 126.15 127.85)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 10)
-		(uuid "cace906b-563b-4a4c-a6c1-05d237fbe785")
+		(uuid "d943f991-a03c-47ed-851c-d2f483585a44")
 	)
 	(via
 		(at 122.65 131.35)
